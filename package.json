@@ -1,11 +1,11 @@
 {
   "name": "hubot-history",
   "description": "Allows Hubot to store a recent chat history for services like IRC that won't do it for you.",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "author": "Jacob Ela <jacob.ela@gmail.com>",
   "license": "MIT",
 
-  "keywords": "hubot, hubot-sripts",
+  "keywords": "hubot, hubot-scripts",
 
   "repository": {
     "type": "git",
@@ -16,31 +16,26 @@
     "url": "https://github.com/wubr/hubot-history/issues"
   },
 
+  "type": "module",
+
   "dependencies": {
   },
 
   "peerDependencies": {
-    "hubot": "2.x"
+    "hubot": ">=14.0.0"
   },
 
   "devDependencies": {
-    "chai": "^2.1.1",
-    "coffee-script": "1.6.3",
-    "grunt": "^0.4.5",
-    "grunt-cli": "^0.1.13",
-    "grunt-contrib-watch": "~0.6.1",
-    "grunt-mocha-test": "~0.12.7",
-    "grunt-release": "~0.11.0",
-    "hubot": "2.x",
-    "matchdep": "~0.3.0",
-    "mocha": "^2.1.0",
-    "sinon": "^1.13.0",
-    "sinon-chai": "^2.7.0"
+    "chai": "^4.5.0",
+    "hubot": "^14.1.0",
+    "mocha": "^11.7.5",
+    "sinon": "^14.0.2",
+    "sinon-chai": "^3.7.0"
   },
 
-  "main": "index.coffee",
+  "main": "index.mjs",
 
   "scripts": {
-    "test": "grunt test"
+    "test": "mocha 'test/**/*.mjs'"
   }
 }
